@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/dataTable.min.css">
+    <link rel="stylesheet" href="assets/css/dataTable.responsive.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.1/css/select.dataTables.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ebay Listing</title>
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="card">
+            <div class="card-body">
+                <div class="float-start">
+                    <h2>Ebay Listing</h2>
+                    <span>Welcome to Portal</span>
+                </div>
+                <div class="float-end pt-3">
+                    <button type="button" class="btn btn-warning fetch-btn">Fetch ebay from live</button>
+                    <span><img src="assets/icons/logout.png" class="logout-btn"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <content>
+        <div class="fluid-container">
+            <div class="row mb-2">
+                <div class="float-end" style="text-align:right">
+                    <span class="grid-view" style="margin-right: 5px; cursor: pointer;"><img src="assets/icons/list.png"
+                            width="25px"></span>
+                    <span class="list-view" style="margin-right: 5px; cursor: pointer;"><img src="assets/icons/grid.png"
+                            width="20px"></span>
+                </div>
+            </div>
+            <div class="ebay-pro--list pro-list-view" style="display: none;">
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Account Name</h5>
+                                <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy
+                                        Phone S3
+                                        S4 S5 S6 S7</a></p>
+                                <div class="actions-btn">
+                                    <div class="switchClass">
+                                        <div>Cron Job</div>
+                                        <label class="switch switch-green">
+                                            <input type="checkbox" class="switch-input" checked>
+                                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+                                    </div>
+                                    <div class="quantity">
+                                        <div>Cron Interval From</div>
+                                        <div class="bg">
+                                            <a href="#" class="quantity__minus"><span>-</span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span>+</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="collapsible sidebar-toggle">
+                                    <span class="arrowSpan"><svg aria-hidden="true" focusable="false"
+                                            role="presentation" class="icon icon--wide icon-chevron-down"
+                                            viewBox="0 0 28 16">
+                                            <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                                fill="none" fill-rule="evenodd"></path>
+                                        </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ebay-pro--list pro-grid-view">
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="assets/img/p2.png" class="card-img-top pro-img" alt="pro-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Account Name</h5>
+                        <p class="card-text"><a href="#"> Genuine USB Charger Charging Cable for Samsung Galaxy Phone S3
+                                S4 S5 S6 S7</a></p>
+                        <div class="actions-btn">
+                            <div class="switchClass">
+                                <div>Cron Job</div>
+                                <label class="switch switch-green">
+                                    <input type="checkbox" class="switch-input" checked>
+                                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                            <div class="quantity">
+                                <div>Cron Interval From</div>
+                                <div class="bg">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="collapsible sidebar-toggle">
+                            <span class="arrowSpan"><svg aria-hidden="true" focusable="false" role="presentation"
+                                    class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4" stroke="#000"
+                                        fill="none" fill-rule="evenodd"></path>
+                                </svg></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+    </content>
+
+    <div class="container sidenav">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="javascript:void(0)" class="sidebar-close">&times; Close</a>
+                <div class="edit-max--qt m-2" style="background-color: #efefef; margin-top: 25px !important;">
+                    <form class="row g-3 pb-3" style="display: flex;
+                    justify-content: center;
+                    align-items: center;">
+                        <div class="col-auto">
+                            <label for="staticEmail2" class="" style="font-size: 14px; font-weight: 600;">Edit Max
+                                Quantity</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="maxQt" placeholder="Edit Max Quantitiy"
+                                style="font-size: 14px; border-radius: 30px;">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary"
+                                style="border-radius: 30px; min-width: 180px; font-size: 14px;">Submit
+                                Query</button>
+                        </div>
+                    </form>
+                </div>
+                <table class="table table-bordered table-hover dt-responsive">
+                    <thead style="background-color: #677eff;">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Country</th>
+                            <th>Languages</th>
+                            <th>Population</th>
+                            <th>Median Age</th>
+                            <th>Area (Km²)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Argentina</td>
+                            <td>Spanish (official), English, Italian, German, French</td>
+                            <td>41,803,125</td>
+                            <td>31.3</td>
+                            <td>2,780,387</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Australia</td>
+                            <td>English 79%, native and other languages</td>
+                            <td>23,630,169</td>
+                            <td>37.3</td>
+                            <td>7,739,983</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Greece</td>
+                            <td>Greek 99% (official), English, French</td>
+                            <td>11,128,404</td>
+                            <td>43.2</td>
+                            <td>131,956</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Luxembourg</td>
+                            <td>Luxermbourgish (national) French, German (both administrative)</td>
+                            <td>536,761</td>
+                            <td>39.1</td>
+                            <td>2,586</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Russia</td>
+                            <td>Russian, others</td>
+                            <td>142,467,651</td>
+                            <td>38.4</td>
+                            <td>17,076,310</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Sweden</td>
+                            <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+                            <td>9,631,261</td>
+                            <td>41.1</td>
+                            <td>449,954</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js"></script>
+    <script src="assets/js/dataTable.responsive.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            // grid and list view
+            $('.grid-view').click(function () {
+                $('.pro-grid-view').toggle();
+                $('.pro-list-view').toggle();
+            });
+            $('.list-view').click(function () {
+                $('.pro-list-view').toggle();
+                $('.pro-grid-view').toggle();
+
+            });
+
+
+            // Initiate dataTable
+            let table = $('table').DataTable({
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox',
+                    targets: 1
+                }],
+                "searching": false,
+                "info": false,
+                "lengthChange": false,
+                // responsive: true,
+
+                columnDefs: [{
+                    orderable: false,
+                    className: 'select-checkbox',
+                    targets: 1
+                }],
+                select: {
+                    style: 'os',
+                    selector: 'td:nth-child(2)'
+                },
+                order: [
+                    [1, 'asc']
+                ],
+
+            });
+
+
+            // var myTable = $('#myTable').DataTable();
+
+            $('table').on('click', 'tbody td', function () {
+                table.cell(this);
+            });
+
+            /* Apply the jEditable handlers to the table */
+            $(document).on('click', 'td', function (e) {
+                if ($(this).hasClass('child')) {
+                    // $(this).children('ul li .dtr-data').css('display', 'none');
+                    console.log('fdff')
+                } else {
+                    var serialNo = $(this).closest('tr').find('.srNo').text();
+                    if ($(this).children("input").length > 0)
+                        return false;
+                    var tdObj = $(this);
+                    var preText = tdObj.html();
+                    var inputObj = $("<input type='text' class='price_num'/>");
+                    tdObj.html("");
+                    inputObj.width(tdObj.width())
+                        .css({
+                            border: "0px",
+                            fontSize: "17px",
+                            width: '100%',
+                        })
+                        .val(preText)
+                        .appendTo(tdObj)
+                        .trigger("focus")
+                        .trigger("select");
+                    inputObj.focusout(function (event) {
+
+                        // if (13 == event.which) { // press ENTER-key
+                        var text = $(this).val();
+                        let myPrice = serialNo + '_' + text;
+
+                        // console.log(myPrice);
+                        tdObj.html(text);
+                        // } else if (27 == event.which) { // press ESC-key
+                        //     tdObj.html(preText);
+                        // }
+                    });
+                    inputObj.click(function () {
+                        return false;
+                    });
+                }
+
+            });
+
+            // respoive edit
+            $(document).on('click', '.dtr-data', function (e) {
+
+                var tdObj = $(this);
+                var preText = tdObj.html();
+                var inputObj = $("<input type='text' class='price_num'/>");
+                tdObj.html("");
+                inputObj.width(tdObj.width())
+                    .css({
+                        border: "0px",
+                        fontSize: "17px",
+                        width: '100%',
+                    })
+                    .val(preText)
+                    .appendTo(tdObj)
+                    .trigger("focus")
+                    .trigger("select");
+                inputObj.focusout(function (event) {
+
+                    // if (13 == event.which) { // press ENTER-key
+                    var text = $(this).val();
+                    let myPrice = serialNo + '_' + text;
+
+                    // console.log(myPrice);
+                    tdObj.html(text);
+                    // } else if (27 == event.which) { // press ESC-key
+                    //     tdObj.html(preText);
+                    // }
+                });
+                inputObj.click(function () {
+                    return false;
+                });
+
+
+            });
+
+            // Checkbox in dataTable
+            const minus = $('.quantity__minus');
+            const plus = $('.quantity__plus');
+            //const input = $('.quantity__input');
+            minus.click(function (e) {
+                const input = $(this).next();
+                e.preventDefault();
+                var value = input.val();
+                if (value > 1) {
+                    value--;
+                }
+                input.val(value);
+            });
+
+            plus.click(function (e) {
+                const input = $(this).prev();
+                e.preventDefault();
+                var value = input.val();
+                value++;
+                input.val(value);
+            })
+
+            // Collapse
+            $('.collapsible').click(function () {
+
+                this.classList.toggle("active");
+                // var content = this.nextElementSibling;
+                // if (content.style.maxHeight) {
+                //     content.style.maxHeight = null;
+                // } else {
+                //     content.style.maxHeight = content.scrollHeight + "px";
+                // }
+
+                $('.arrowSpan').toggleClass('spanleft')
+
+            });
+
+
+            // Checkbox All
+            table.on("click", "th.select-checkbox", function () {
+                if ($("th.select-checkbox").hasClass("selected")) {
+                    table.rows().deselect();
+                    $("th.select-checkbox").removeClass("selected");
+                } else {
+                    table.rows().select();
+                    $("th.select-checkbox").addClass("selected");
+                }
+            }).on("select deselect", function () {
+                ("Some selection or deselection going on")
+                if (table.rows({
+                        selected: true
+                    }).count() !== table.rows().count()) {
+                    $("th.select-checkbox").removeClass("selected");
+                } else {
+                    $("th.select-checkbox").addClass("selected");
+                }
+            });
+
+
+            //  Sidebar Menu
+            $('.sidebar-toggle').click(function () {
+                $('.sidenav').css({
+                    'width': '75%',
+                    'left': '0%'
+                });
+                $('.overlay').addClass('overlyClass');
+            });
+
+            $('.sidebar-close').click(function () {
+                $('.sidenav').css({
+                    'width': '100%',
+                    'left': '-100%'
+                });
+                $('.overlay').removeClass('overlyClass');
+            });
+
+            // Sidebar submenu
+            $('#sub-menu').click(function () {
+                $('.side-submenu').css({
+                    width: '250px'
+                });
+                $('.sidenav').css({
+                    width: '0'
+                });
+            });
+
+            $('.sidemenu-close').click(function () {
+                $('.side-submenu').css({
+                    width: '0'
+                });
+                $('.sidenav').css({
+                    width: '250px'
+                });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
